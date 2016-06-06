@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,27 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPn-dx-8eR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <color key="backgroundColor" red="0.054901960780000002" green="0.40784313729999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeJ-q2-PxJ">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VeJ-q2-PxJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="1De-Za-Lt1"/>
+                            <constraint firstAttribute="trailing" secondItem="VeJ-q2-PxJ" secondAttribute="trailing" id="CWE-Na-w89"/>
+                            <constraint firstItem="VeJ-q2-PxJ" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.5" id="LYF-Xv-bFx"/>
+                            <constraint firstAttribute="trailing" secondItem="iPn-dx-8eR" secondAttribute="trailing" id="OXU-MA-l62"/>
+                            <constraint firstItem="iPn-dx-8eR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="foo-z8-Ce8"/>
+                            <constraint firstItem="iPn-dx-8eR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fv1-fY-UXl"/>
+                            <constraint firstItem="VeJ-q2-PxJ" firstAttribute="top" secondItem="iPn-dx-8eR" secondAttribute="bottom" id="qAZ-le-15P"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="VeJ-q2-PxJ" secondAttribute="bottom" id="zb5-ou-cw6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
