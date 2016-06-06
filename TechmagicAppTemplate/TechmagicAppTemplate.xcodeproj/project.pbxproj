@@ -78,6 +78,7 @@
 		206678791D06201800268520 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2066787C1D06237E00268520 /* ArraySafetyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraySafetyTests.swift; sourceTree = "<group>"; };
 		2066787D1D06237E00268520 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		206678831D0629CB00268520 /* TechmagicAppTemplate-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TechmagicAppTemplate-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +155,7 @@
 			children = (
 				2066781E1D06162D00268520 /* AppDelegate.swift */,
 				2066781F1D06162D00268520 /* Info.plist */,
+				206678831D0629CB00268520 /* TechmagicAppTemplate-Bridging-Header.h */,
 				206678241D06165D00268520 /* Constants.swift */,
 			);
 			path = Application;
@@ -646,6 +648,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.techmagic.TechmagicAppTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TechmagicAppTemplate/Application/TechmagicAppTemplate-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -657,6 +660,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.techmagic.TechmagicAppTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TechmagicAppTemplate/Application/TechmagicAppTemplate-Bridging-Header.h";
 			};
 			name = Release;
 		};
