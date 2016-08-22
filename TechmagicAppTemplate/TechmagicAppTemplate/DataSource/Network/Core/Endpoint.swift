@@ -20,12 +20,16 @@ enum Endpoint {
     }
     
     func link(params params: [AnyObject]?) -> String {
+        var path: String = ""
+
         switch self {
         case SignIn:
-            return cleanURL("\(baseURL())/signin")
+            path = "signin"
         case SignUp:
-            return cleanURL("\(baseURL())/signup")
+            path = "signup"
         }
+        
+        return cleanURL("\(baseURL())/\(path)")
     }
     
     // MARK: - Private

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: BaseVC {
 
     // MARK: - Lifecycle
     
